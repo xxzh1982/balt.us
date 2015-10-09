@@ -1,0 +1,175 @@
+{
+	"about":{
+		"name":"Adriaan Balt Louis Scholvinck",
+		"logo":"assets/images/BALT.svg",
+		"email":"adriaan@BALT.us",
+		"telephone":"917 727 2258",
+		"url":"http://www.BALT.us",
+		"city":"NYC"
+	},
+	"projects":[
+		{
+			"slug":"desigual",
+			"client":"Desigual",
+			"campaign":"Find some sex, fun, love",
+			"thumbnail":{
+				"image":"assets/images/work/desigual/thumbnail-1.jpg",
+				"video":""
+			},
+			"description":[
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			],
+			"blocks":[
+				{
+					"description":"Working for AKQA"
+				},
+				{
+					"image":"assets/images/work/desigual/image-0.jpeg"
+				},
+				{
+					"copy":"built using AngularJS, Grunt, etc"
+				},
+				{
+					"image":"assets/images/work/desigual/image-1.jpeg"
+				},
+				{
+					"image":"assets/images/work/desigual/image-2.jpeg"
+				},
+				{
+					"image":"assets/images/work/desigual/image-3.jpeg"
+				},
+				{
+					"video":"assets/images/work/desigual/video.mp4"
+				},
+				{
+					"image":"assets/images/awards/cannes.svg"
+				}
+			],
+			"link":{
+				"label":"",
+				"url":"http://www.desigual.com"
+			}
+		},
+		{
+			"slug":"written-in-the-stars",
+			"client":"AKQA",
+			"campaign":"Written in the Stars",
+			"thumbnail":{
+				"image":"assets/images/work/written-in-the-stars/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using JQuery, Grunt, etc",
+				"To share the holiday cheer, users are thrown into an audio/visual exploration in the palm of their hands with this web application.  When receiving a message from a friend, users enter a stary sky in search of the North Star.  Upon finding it, a particle animation ensues as a custom Radiohead soundtrack plays through their speakers or headphones.  Alternatively users can write their own message in the sky and share the experience on social media or by email."
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"slug":"nature-valley",
+			"client":"Nature Valley",
+			"campaign":"Trail View",
+			"thumbnail":{
+				"image":"assets/images/work/trail-view/grandcanyon.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"slug":"kenneth-cole",
+			"client":"Kenneth Cole",
+			"campaign":"view points",
+			"thumbnail":{
+				"image":"assets/images/work/view-points/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"slug":"red",
+			"client":"(RED)",
+			"campaign":"Ecommerce Charity",
+			"thumbnail":{
+				"image":"assets/images/work/red/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"slug":"our-book-of-liquid-gold",
+			"client":"Kraft",
+			"campaign":"Our Book of Liquid Gold",
+			"thumbnail":{
+				"image":"assets/images/work/our-book-of-liquid-gold/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"slug":"conde-nast",
+			"client":"Conde Nast",
+			"campaign":"Publishing House",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		}
+	]
+}

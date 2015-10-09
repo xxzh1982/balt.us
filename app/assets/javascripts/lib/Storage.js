@@ -4,15 +4,15 @@ import ActionCreator from '../actions/AppActions';
 
 export
 default {
-    loadProjects() {
+    loadWebsite() {
         request
-          .get('/assets/data/projects.json')
+          .get('/assets/data/balt.json')
           .set('Content-Type', 'application/json')
           .end(function(err, res){
-            ActionCreator.projectsLoaded( JSON.parse(res.text) );
+            ActionCreator.websiteLoaded( JSON.parse(res.text) );
           });
         // window.callback = (data) => {
-        //   ActionCreator.projectsLoaded(data);
+        //   ActionCreator.websiteLoaded(data);
         // }
         // jsonp('feed.js?jsonp=callback', (error, data) => {
         //     if (error) {
@@ -22,7 +22,7 @@ default {
         //         return error;
         //     } else {
         //         /* @TODO: figure out why jsonp must use the callback defined above */
-        //         ActionCreator.projectsLoaded(data);
+        //         ActionCreator.websiteLoaded(data);
         //     }
         // });
     }
