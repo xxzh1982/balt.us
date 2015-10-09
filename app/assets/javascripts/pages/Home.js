@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 import AppStore from '../stores/AppStore';
 import ActionCreator from '../actions/AppActions';
 import ProjectModule from '../components/ProjectModule';
+import cx from 'classnames';
 
 
 export default class Home extends Component {
@@ -19,8 +20,6 @@ export default class Home extends Component {
   }
 
   componentWillMount () {
-    ActionCreator.loadProjects();
-    ActionCreator.loadAirports();
     AppStore.listen(this._onChange);
   }
 
@@ -32,16 +31,15 @@ export default class Home extends Component {
 
     const projectsToRender = this.state.projects.map( (m) => {
        return (
-         <ProjectModule key={m.projectId} projectId={m.projectId} />
+         <ProjectModule key={m.slug} projectId={m.slug} />
        )
     });
     return (
       <div className='Home'>
-        <h1>Etihad</h1>
         <div className='Home-container'>
-          <div className='Home-input'></div>
-          <div className='Home-projects'>
-          </div>
+          <ul className='projects'>
+          { projectsToRender }
+          </ul>
         </div>
       </div>
     );
