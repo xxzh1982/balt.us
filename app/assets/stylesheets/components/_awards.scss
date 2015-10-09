@@ -1,0 +1,31 @@
+$height: 70;
+@for $i from 1 through 18 {
+	#awards {
+		ul li{
+			&:nth-child(#{$i}) {
+				background-position: center (-1*$i*$height)+$height+px;
+			}
+		}
+	}
+}
+#awards {
+	ul {
+    	padding: 2em 0;
+		background: $color-bg;
+		text-align: center;
+		li {
+			background-image: url("../images/awards/awards.svg");
+			height: 70px;
+			width: 140px;
+      		margin: 1rem .25rem;
+			background-repeat: no-repeat;
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;
+			zoom: 1;
+			div {
+				@include opacity(0);
+			}
+		}
+	}
+}
