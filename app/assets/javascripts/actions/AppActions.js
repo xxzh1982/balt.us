@@ -8,8 +8,9 @@ class AppActions {
      * arguments become CONSTANT_CASED when exported                    *
      ********************************************************************/
     this.generateActions(
-      'loadProjects',
-      'flightsLoaded'
+      'loadWebsite',
+      'websiteLoaded',
+      'getProjectById'
     )
   }
 }
