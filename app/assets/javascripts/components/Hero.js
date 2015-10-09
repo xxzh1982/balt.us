@@ -2,6 +2,8 @@
 
 import React, {Component} from 'react';
 import AppStore from '../stores/AppStore';
+import cx from 'classnames';
+
 
 export default class Hero extends Component {
 
@@ -10,10 +12,10 @@ export default class Hero extends Component {
 
     this.state = AppStore.getState();
 
-    console.log('this.state', this.state);
 
     this._onChange = (o) => {
       this.setState( AppStore.getState() );
+          console.log('this.ab', this.state.about);
     }
   }
 
@@ -28,9 +30,9 @@ export default class Hero extends Component {
    render () {
      return (
        <section id="hero">
-         <div class="inner">
-           <img class="logo" src="" alt="BALT"/>
-           <div class="contact">
+         <div className="inner">
+           <img className="logo" src={ this.state.about.logo } alt="BALT"/>
+           <div className="contact">
              <h5>{ this.state.about.email }</h5>
              <h5>{ this.state.about.city }</h5>
            </div>
