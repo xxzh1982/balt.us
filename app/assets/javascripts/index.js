@@ -24,7 +24,6 @@ import { history } from 'react-router/lib/HashHistory';
 
 import Home from './pages/Home';
 import Details from './pages/Details';
-import Earth from './pages/Earth';
 
 /**
  ** Samsung-specific `modules` (i.e., React components) included below and rendered in <Router />
