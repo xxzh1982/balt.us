@@ -2,15 +2,16 @@
 @import 'bootstrap';
 @import 'neat';
 
+@import './mixins/all';
 @import './generated/icons';
-@import './base/main';
 @import './base/variables';
-@import './base/colors';
+@import './base/main';
 @import './base/mixins';
 @import './base/media-queries';
 @import './base/typography';
 @import './base/utilities';
-@import './base/react-colorpickr';
 
 @import './pages/Home';
 @import './pages/Details';
+
+@import "./components/all";
