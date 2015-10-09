@@ -14,6 +14,8 @@ class AppStore {
   constructor () {
     this.about = {};
     this.projects = [];
+    this.awards = [];
+    this.clients = [];
 
     this.bindListeners({
       loadWebsite: ActionCreator.LOAD_WEBSITE,
@@ -23,7 +25,6 @@ class AppStore {
   }
 
   getProjectById( id ){
-    console.log ( 'getProjectById', id );
     return this.projects.filter(project => project.projectId === id)[0]
   }
 
@@ -34,8 +35,9 @@ class AppStore {
   websiteLoaded (data) {
     if ( data ) {
       this.about = data.about;
-      console.log('this.about',this.about);
       this.projects = data.projects;
+      this.awards = data.awards;
+      this.clients = data.clients;
     }
   }
 

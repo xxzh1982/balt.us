@@ -12,10 +12,8 @@ export default class Hero extends Component {
 
     this.state = AppStore.getState();
 
-
     this._onChange = (o) => {
       this.setState( AppStore.getState() );
-          console.log('this.ab', this.state.about);
     }
   }
 

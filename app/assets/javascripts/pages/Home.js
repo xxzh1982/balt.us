@@ -6,6 +6,8 @@ import AppStore from '../stores/AppStore';
 import ActionCreator from '../actions/AppActions';
 import ProjectModule from '../components/ProjectModule';
 import cx from 'classnames';
+import Awards from '../components/Awards';
+import Clients from '../components/Clients';
 
 
 export default class Home extends Component {
@@ -40,6 +42,8 @@ export default class Home extends Component {
           <ul className='projects'>
           { projectsToRender }
           </ul>
+          <Awards />
+          <Clients />
         </div>
       </div>
     );

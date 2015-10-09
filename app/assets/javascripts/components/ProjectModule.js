@@ -20,7 +20,6 @@ export default class ProjectModule extends Component {
 
     this.state = this.getStateById( props.projectId );
 
-    console.log('this.state.image', this.state );
     this._onChange = (o) => {
       this.setState( this.getStateById( props.projectId ) );
     }
