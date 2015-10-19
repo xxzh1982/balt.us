@@ -37,6 +37,7 @@ React.render((
     <Route path="/" component={App}>
       <Route name="home" path="/home" component={Home}/>
       <Route name="details" component={Details} path="/:projectid"/>
+      <Route path="/" component={Home} />
     </Route>
   </Router>
 ), document.body);
