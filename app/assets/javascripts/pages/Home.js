@@ -22,6 +22,7 @@ export default class Home extends Component {
   }
 
   componentWillMount () {
+    ActionCreator.loadWebsite();
     AppStore.listen(this._onChange);
   }
 
@@ -30,14 +31,13 @@ export default class Home extends Component {
   }
 
   render () {
-
     const projectsToRender = this.state.projects.map( (m) => {
        return (
          <ProjectModule key={m.slug} projectId={m.slug} />
        )
     });
     return (
-      <div className='Home'>
+      <div className='Home Page'>
         <div className='Home-container'>
           <ul className='projects'>
           { projectsToRender }
