@@ -10,7 +10,8 @@ class AppActions {
     this.generateActions(
       'loadWebsite',
       'websiteLoaded',
-      'getProjectById'
+      'getProjectById',
+      'toggleProject'
     )
   }
 }
