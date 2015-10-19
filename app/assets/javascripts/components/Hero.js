@@ -3,15 +3,13 @@
 import React, {Component} from 'react';
 import AppStore from '../stores/AppStore';
 import cx from 'classnames';
-
+import { Link } from 'react-router';
 
 export default class Hero extends Component {
 
   constructor (props) {
     super(props);
-
     this.state = AppStore.getState();
-
     this._onChange = (o) => {
       this.setState( AppStore.getState() );
     }
@@ -29,7 +27,9 @@ export default class Hero extends Component {
      return (
        <section id="hero">
          <div className="inner">
-           <img className="logo" src={ this.state.about.logo } alt="BALT"/>
+           <Link to="/">
+             <img className="logo" src={ this.state.about.logo } alt="BALT"/>
+           </Link>
            <div className="contact">
              <h5>{ this.state.about.email }</h5>
              <h5>{ this.state.about.city }</h5>
