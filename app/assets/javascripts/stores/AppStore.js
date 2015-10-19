@@ -4,6 +4,7 @@ import alt from '../lib/alt';
 import assign from 'object-assign';
 import ActionCreator from '../actions/AppActions';
 import Storage from '../lib/Storage';
+// import deepAssign from 'deep-assign';
 
 /********************************************************************
  * The store is a data warehouse.                                   *
@@ -17,9 +18,15 @@ class AppStore {
     this.awards = [];
     this.clients = [];
 
+    this.getProject = (id) => {
+      console.log('this.projects', this.projects);
+      return this.projects.filter(project => project.slug === id)[0];
+    }
+
     this.bindListeners({
       loadWebsite: ActionCreator.LOAD_WEBSITE,
-      websiteLoaded: ActionCreator.WEBSITE_LOADED
+      websiteLoaded: ActionCreator.WEBSITE_LOADED,
+      toggleProject: ActionCreator.TOGGLE_PROJECT
     })
 
   }
@@ -39,6 +46,14 @@ class AppStore {
       this.awards = data.awards;
       this.clients = data.clients;
     }
+  }
+
+  toggleProject ( o ) {
+    let projectToBeUpdated = this.getProject(o.id);
+    console.log( 'toggleProject ', o, projectToBeUpdated);
+    const copyOfProjectToBeUpdated = assign({}, { ... projectToBeUpdated});
+    console.log( 'copyOfProjectToBeUpdated ', copyOfProjectToBeUpdated);
+    projectToBeUpdated = copyOfProjectToBeUpdated;
   }
 
 }
