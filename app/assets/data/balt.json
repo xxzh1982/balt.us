@@ -9,6 +9,7 @@
 	},
 	"projects":[
 		{
+			"isOpen":false,
 			"slug":"desigual",
 			"client":"Desigual",
 			"campaign":"Find some sex, fun, love",
@@ -51,6 +52,7 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"written-in-the-stars",
 			"client":"AKQA",
 			"campaign":"Written in the Stars",
@@ -72,6 +74,7 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"nature-valley",
 			"client":"Nature Valley",
 			"campaign":"Trail View",
@@ -92,9 +95,10 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"kenneth-cole",
 			"client":"Kenneth Cole",
-			"campaign":"view points",
+			"campaign":"Fashion View Points",
 			"thumbnail":{
 				"image":"assets/images/work/view-points/thumbnail.jpg",
 				"video":""
@@ -112,9 +116,10 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"red",
 			"client":"(RED)",
-			"campaign":"Ecommerce Charity",
+			"campaign":"Charity",
 			"thumbnail":{
 				"image":"assets/images/work/red/thumbnail.jpg",
 				"video":""
@@ -132,6 +137,7 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"our-book-of-liquid-gold",
 			"client":"Kraft",
 			"campaign":"Our Book of Liquid Gold",
@@ -152,11 +158,180 @@
 			}
 		},
 		{
+			"isOpen":false,
 			"slug":"conde-nast",
 			"client":"Conde Nast",
 			"campaign":"Publishing House",
 			"thumbnail":{
 				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"stella-artois",
+			"client":"Stella Artois",
+			"campaign":"Holiday Card",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"moet-chandon",
+			"client":"Moet & Chandon",
+			"campaign":"Gift Giving",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"one-management",
+			"client":"One Management",
+			"campaign":"Modelling Agency",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"models-com",
+			"client":"Models.Com",
+			"campaign":"News Feed",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"time-warner",
+			"client":"Time Warner",
+			"campaign":"Television Juggernaut",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"ford-motor-company",
+			"client":"Ford Motor Company",
+			"campaign":"Automotive Industry",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"maybelline",
+			"client":"Maybelline",
+			"campaign":"Makeup Giant",
+			"thumbnail":{
+				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"video":""
+			},
+			"description":[
+				"Working for AKQA",
+				"built using AngularJS, Grunt, etc"
+			],
+			"images":[
+				""
+			],
+			"link":{
+				"label":"",
+				"url":""
+			}
+		},
+		{
+			"isOpen":false,
+			"slug":"mtv",
+			"client":"MTV",
+			"campaign":"Video Music Awards",
+			"thumbnail":{
+				"image":"assets/images/work/mtv-vma-2005/thumbnail.jpg",
 				"video":""
 			},
 			"description":[
