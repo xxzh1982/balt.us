@@ -17,7 +17,7 @@
 		}
 		li {
 			@include flexbox();
-			width: 50%;
+			width: 100%;
 			max-height: 530px;
 			overflow: hidden;
 			color: $color-font;
@@ -54,7 +54,7 @@
 						background: $white;
 						height: 100%;
 						position: absolute;
-						top:91px;
+						top:120px;
 						z-index: -1;
 						@include transition(all .25s cubic-bezier(0.3, 1, 0.21, 0.99) );
 					}
@@ -77,12 +77,31 @@
 	}
 }
 
-// TABLET = 768px
+@media (min-width: 769px){
+	.Home {
+		.projects {
+			li {
+				width: 50%;
+			}
+		}
+	}
+}
+
 @media (min-width: 1025px){
 	.Home {
 		.projects {
 			li {
 				width: 33.3333%;
+			}
+		}
+	}
+}
+
+@media (min-width: 1441px){
+	.Home {
+		.projects {
+			li {
+				width: 25%;
 			}
 		}
 	}

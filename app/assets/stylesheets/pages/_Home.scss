@@ -1,6 +1,5 @@
 .Home {
   &-container {
-    margin: 40px  0 0 40px;
-    @include outer-container($desktop);
+    padding: 40px;
   }
 }
