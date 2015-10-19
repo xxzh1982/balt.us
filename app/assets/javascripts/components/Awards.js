@@ -33,7 +33,7 @@ export default class Awards extends Component {
      });
      return (
        <section id="awards">
-       	<div class="inner">
+       	<div className="inner">
        		<header>
        			<h2>Awards Ive Received</h2>
        		</header>
