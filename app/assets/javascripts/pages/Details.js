@@ -1,32 +1,37 @@
-'use strict';
+"use strict";
 
-import React, { Component }  from 'react';
-import { Link } from 'react-router';
-import AppStore from '../stores/AppStore';
-import ActionCreator from '../actions/AppActions';
+import React, { Component }  from "react";
+import { Link } from "react-router";
+import AppStore from "../stores/AppStore";
+import ActionCreator from "../actions/AppActions";
+import _ from "lodash";
+
 
 export default class Details extends Component {
   constructor (props) {
     super(props);
 
-    this.projectId = this.props.params.projectId;
+    this.projectId = this.props.params.projectid;
 
     this.getStateById = ( id ) => {
-      if ( AppStore.getState().projects.filter(project => project.slug === id)[0] ) {
-        return AppStore.getState().projects.filter(project => project.slug === id)[0];
-      } else {
-        return {};
+      if ( AppStore.getState().projects ) {
+        if ( AppStore.getState().projects.filter(project => project.slug === id)[0] ) {
+          return AppStore.getState().projects.filter(project => project.slug === id)[0];
+        } else {
+          return {};
+        }
       }
     }
 
-    this.state = this.getStateById( props.projectId );
+    this.state = this.getStateById( this.projectId );
 
     this._onChange = (o) => {
-      this.setState( this.getStateById( props.projectId ) );
+      this.setState( this.getStateById( this.projectId ) );
     }
   }
 
   componentWillMount () {
+    ActionCreator.loadWebsite();
     AppStore.listen(this._onChange);
   }
 
@@ -36,19 +41,19 @@ export default class Details extends Component {
 
   render () {
     return (
-      <div className='Details'>
-        <div className='Details-container'>
+      <div className="Details Page">
+        <div component="div" key={this.state.slug} className="container">
           <section>
             <h1>{ this.state.campaign }</h1>
             <h3></h3>
-            <p ng-repeat="paragraph in description">paragraph</p>
+            <p>paragraph</p>
             <article>
-                <div ng-repeat="block in blocks" du-parallax y="background">
-                    <p ng-if="block.copy">this.state.copy</p>
-                    <img src="block.image" ng-if="block.image || block.award"/>
+                <div>
+                    <p>this.state.copy</p>
+                    <img src=""/>
                 </div>
             </article>
-            <div class="others">
+            <div className="others">
                 <div>
                     <img src="" alt=""/>
                     <h4>Publishing Site</h4>
@@ -61,7 +66,7 @@ export default class Details extends Component {
                 </div>
             </div>
           </section>
-        </div>
+        </div>;
       </div>
     );
   }
