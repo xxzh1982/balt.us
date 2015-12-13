@@ -9,15 +9,16 @@ $height: 70;
 	}
 }
 #awards {
+	padding: 0 4em;
 	ul {
-    	padding: 2em 0;
+    	padding: 2em;
 		background: $color-bg;
 		text-align: center;
 		li {
 			background-image: url("../images/awards/awards.svg");
 			height: 70px;
 			width: 140px;
-			margin: 1rem .25rem;
+			margin: 1.5em;
 			background-repeat: no-repeat;
 			display: -moz-inline-stack;
 			display: inline-block;
