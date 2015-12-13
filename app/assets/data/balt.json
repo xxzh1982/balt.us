@@ -68,8 +68,7 @@
 				},
 				{
 					"video":{
-						"mp4":"assets/images/work/desigual/video.mp4",
-						"ogv":"assets/images/work/desigual/video.ogv"
+						"mp4":"assets/videos/work/conde-nast/video.mp4"
 					}
 				},
 				{
@@ -395,6 +394,7 @@
 			"image":"",
 			"href":""
 		},
+
 		{
 			"name":"Verizon",
 			"image":"",
@@ -483,6 +483,11 @@
 		{
 			"name":"Maybelline",
 			"image":"assets/images/logos/Maybelline.png",
+			"href":""
+		},
+		{
+			"name":"Sonos",
+			"image":"assets/images/logos/Sonos.png",
 			"href":""
 		}
 	]
