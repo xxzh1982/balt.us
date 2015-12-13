@@ -44,9 +44,7 @@ export default class ProjectModule extends Component {
       			</div>
       			<div className="bg animate"></div>
       		</div>
-      		<picture className="animate">
-      			<img src={ this.state.thumbnail.image } alt="{ this.state.client } - { this.state.name }"/>
-      		</picture>
+          <div className="img" style={{ backgroundImage: 'url(' + this.state.thumbnail.image + ')' }}/>
       	</Link>
       </li>
      )
