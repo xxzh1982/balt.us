@@ -18,32 +18,65 @@
 				"video":""
 			},
 			"description":[
-				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 			],
 			"blocks":[
 				{
-					"description":"Working for AKQA"
+					"image":{
+						"type":"large",
+						"src":"assets/images/work/desigual/large.jpg"
+					}
 				},
 				{
-					"image":"assets/images/work/desigual/image-0.jpeg"
+					"image":{
+						"type":"small",
+						"src":"assets/images/work/desigual/image-1.jpeg"
+					}
 				},
 				{
 					"copy":"built using AngularJS, Grunt, etc"
 				},
 				{
-					"image":"assets/images/work/desigual/image-1.jpeg"
+					"clearfix":true
 				},
 				{
-					"image":"assets/images/work/desigual/image-2.jpeg"
+					"image":{
+						"type":"small",
+						"src":"assets/images/work/desigual/image-2.jpeg"
+					}
 				},
 				{
-					"image":"assets/images/work/desigual/image-3.jpeg"
+					"image":{
+						"type":"small",
+						"src":"assets/images/work/desigual/image-3.jpeg"
+					}
 				},
 				{
-					"video":"assets/images/work/desigual/video.mp4"
+					"clearfix":true
 				},
 				{
-					"image":"assets/images/awards/cannes.svg"
+					"copy":"built using AngularJS, Grunt, etc"
+				},
+				{
+					"image":{
+						"type":"small",
+						"src":"assets/images/work/desigual/image-0.jpeg"
+					}
+				},
+				{
+					"clearfix":true
+				},
+				{
+					"video":{
+						"mp4":"assets/images/work/desigual/video.mp4",
+						"ogv":"assets/images/work/desigual/video.ogv"
+					}
+				},
+				{
+					"image":{
+						"type":"award",
+						"src":"assets/images/awards/cannes.svg"
+					}
 				}
 			],
 			"link":{
@@ -57,7 +90,7 @@
 			"client":"AKQA",
 			"campaign":"Written in the Stars",
 			"thumbnail":{
-				"image":"assets/images/work/written-in-the-stars/thumbnail.jpg",
+				"image":"assets/images/work/written-in-the-stars/thumbnail4.jpg",
 				"video":""
 			},
 			"description":[
@@ -65,8 +98,7 @@
 				"built using JQuery, Grunt, etc",
 				"To share the holiday cheer, users are thrown into an audio/visual exploration in the palm of their hands with this web application.  When receiving a message from a friend, users enter a stary sky in search of the North Star.  Upon finding it, a particle animation ensues as a custom Radiohead soundtrack plays through their speakers or headphones.  Alternatively users can write their own message in the sky and share the experience on social media or by email."
 			],
-			"images":[
-				""
+			"blocks":[
 			],
 			"link":{
 				"label":"",
@@ -86,8 +118,7 @@
 				"Working for AKQA",
 				"built using AngularJS, Grunt, etc"
 			],
-			"images":[
-				""
+			"blocks":[
 			],
 			"link":{
 				"label":"",
@@ -101,27 +132,6 @@
 			"campaign":"Fashion View Points",
 			"thumbnail":{
 				"image":"assets/images/work/view-points/thumbnail.jpg",
-				"video":""
-			},
-			"description":[
-				"Working for AKQA",
-				"built using AngularJS, Grunt, etc"
-			],
-			"images":[
-				""
-			],
-			"link":{
-				"label":"",
-				"url":""
-			}
-		},
-		{
-			"isOpen":false,
-			"slug":"red",
-			"client":"(RED)",
-			"campaign":"Charity",
-			"thumbnail":{
-				"image":"assets/images/work/red/thumbnail.jpg",
 				"video":""
 			},
 			"description":[
@@ -161,7 +171,7 @@
 			"isOpen":false,
 			"slug":"conde-nast",
 			"client":"Conde Nast",
-			"campaign":"Publishing House",
+			"campaign":"Mass Media",
 			"thumbnail":{
 				"image":"assets/images/work/conde-nast/thumbnail.jpg",
 				"video":""
@@ -184,7 +194,7 @@
 			"client":"Stella Artois",
 			"campaign":"Holiday Card",
 			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"image":"assets/images/work/stella-artois-holiday-card/thumbnail.jpg",
 				"video":""
 			},
 			"description":[
@@ -205,7 +215,7 @@
 			"client":"Moet & Chandon",
 			"campaign":"Gift Giving",
 			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"image":"assets/images/work/moet-chandon-gift-giving/thumbnail.jpg",
 				"video":""
 			},
 			"description":[
@@ -226,91 +236,7 @@
 			"client":"One Management",
 			"campaign":"Modelling Agency",
 			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
-				"video":""
-			},
-			"description":[
-				"Working for AKQA",
-				"built using AngularJS, Grunt, etc"
-			],
-			"images":[
-				""
-			],
-			"link":{
-				"label":"",
-				"url":""
-			}
-		},
-		{
-			"isOpen":false,
-			"slug":"models-com",
-			"client":"Models.Com",
-			"campaign":"News Feed",
-			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
-				"video":""
-			},
-			"description":[
-				"Working for AKQA",
-				"built using AngularJS, Grunt, etc"
-			],
-			"images":[
-				""
-			],
-			"link":{
-				"label":"",
-				"url":""
-			}
-		},
-		{
-			"isOpen":false,
-			"slug":"time-warner",
-			"client":"Time Warner",
-			"campaign":"Television Juggernaut",
-			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
-				"video":""
-			},
-			"description":[
-				"Working for AKQA",
-				"built using AngularJS, Grunt, etc"
-			],
-			"images":[
-				""
-			],
-			"link":{
-				"label":"",
-				"url":""
-			}
-		},
-		{
-			"isOpen":false,
-			"slug":"ford-motor-company",
-			"client":"Ford Motor Company",
-			"campaign":"Automotive Industry",
-			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
-				"video":""
-			},
-			"description":[
-				"Working for AKQA",
-				"built using AngularJS, Grunt, etc"
-			],
-			"images":[
-				""
-			],
-			"link":{
-				"label":"",
-				"url":""
-			}
-		},
-		{
-			"isOpen":false,
-			"slug":"maybelline",
-			"client":"Maybelline",
-			"campaign":"Makeup Giant",
-			"thumbnail":{
-				"image":"assets/images/work/conde-nast/thumbnail.jpg",
+				"image":"assets/images/work/one-management/thumbnail.jpg",
 				"video":""
 			},
 			"description":[
