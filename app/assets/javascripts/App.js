@@ -6,25 +6,26 @@ import ActionCreator from './actions/AppActions';
 import AppStore from './stores/AppStore';
 import ReactTransitionGroup from "react-addons-transition-group";
 
-import Hero from './components/Hero'
-import Home from './pages/Home'
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
 const App = React.createClass({
 
   mixins: [Router.State],
 
   componentWillAppear(callback) {
-  console.log("App componentWillAppear");
+    console.log("App componentWillAppear");
     _animateIn(callback);
   },
 
   componentWillEnter(callback) {
-  console.log("App componentWillEnter");
+    console.log("App componentWillEnter");
     _animateIn(callback);
   },
 
   componentWillLeave(callback) {
-  console.log("App componentWillLeave");
+    console.log("App componentWillLeave");
     _animateOut(callback);
   },
 
@@ -49,13 +50,16 @@ const App = React.createClass({
   },
 
   render () {
-    const { pathname } = this.props.location
+    const pathname = (this.props.location.pathname === "/" ? 'home' : this.props.location);
     return (
       <div id='main' rel="main">
         <Hero />
-        <ReactTransitionGroup component="div" className='content'>
-          {React.cloneElement(this.props.children || <Home />, { key: pathname })}
-        </ReactTransitionGroup>
+        {
+          this.props.children
+            ||
+          <Home />
+        }
+        <Footer />
       </div>
     );
   }
