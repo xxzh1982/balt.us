@@ -1,9 +1,73 @@
 footer {
-  padding: 2em 0em;
-  margin: 2em;
-  background: #fff;
-	* {
-		margin: .25em;
-		display: inline-block;
+	padding: 2em 8em 8em 8em;
+	margin: 2em;
+	position: relative;
+	background: #fff;
+	.logo {
+		position: absolute;
+		right: 8em;
+		top: 0;
+		width: 10%;
+	}
+	.share {
+		display: block;
+		margin: 5em 8em;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 1em;
+			position: relative;
+			a {
+				display: block;
+				&:hover {
+					.icon {
+						@include opacity( 1 );
+					}
+					span.circle {
+	  					border: 1px solid #000;
+					}
+				}
+			}
+			span.circle {
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				width: 120px;
+				height: 120px;
+				display: block;
+	  			border: 1px solid #888;
+			}
+			.icon {
+				@include opacity( .8 );
+				text-align: center;
+				display: block;
+				position: absolute;
+				top: 50%;
+			    margin-top: -15px;
+			    left: 50%;
+			    margin-left: -15px;
+			}
+			&.divide {
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				width: 6px;
+				height: 6px;
+				top: -50px;
+				background: #666;
+			}
+		}
+	}
+	.contact {
+		position: absolute;
+		left: 8em;
+		top: 0;
+		* {
+			margin: .25em;
+			display: inline-block;
+		}
+	}
+	.bottom {
+		position: relative;
 	}
 }
